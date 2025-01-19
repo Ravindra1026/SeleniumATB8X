@@ -10,7 +10,7 @@ public class Task02 {
     @Test
     public void test_simpleForm(){
         EdgeOptions edgeOptions = new EdgeOptions();
-        edgeOptions.addArguments(--start-maximized);
+        edgeOptions.addArguments("--start-maximized");
 
         EdgeDriver driver = new EdgeDriver(edgeOptions);
         driver.get("https://awesomeqa.com/practice.html");

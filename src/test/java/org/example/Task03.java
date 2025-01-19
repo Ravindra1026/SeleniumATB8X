@@ -10,7 +10,7 @@ public class Task03 {
     @Test
     public void test_iDriveLogin() throws InterruptedException {
         EdgeOptions edgeOptions = new EdgeOptions();
-        edgeOptions.addArguments(--start-maximized);
+        edgeOptions.addArguments("--start-maximized");
 
         EdgeDriver driver = new EdgeDriver(edgeOptions);
         driver.get("https://www.idrive360.com/enterprise/login");
