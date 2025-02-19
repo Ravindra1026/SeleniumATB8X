@@ -4,7 +4,6 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.testng.annotations.DataProvider;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -13,7 +12,8 @@ public class UtilExcel {
 
     static Workbook book;
     static Sheet sheet;
-    public static String SHEET_PATH = System.getProperty("user.dir") + "src/test/java/org/example/DataDriven/TestData01.xlsx";
+   // public static String SHEET_PATH = "\" " + System.getProperty("user.dir") + "\\src\\test\\java\\org\\example\\DataDriven\\TestData01.xlsx" + "\"";
+    public static String SHEET_PATH = "C:\\Users\\Ravindra Singh\\IdeaProjects\\SeleniumATB8X\\src\\test\\resources\\TestData01.xlsx";
     public static Object[][] getTestDataFromExcel(String sheetName) throws IOException {
         FileInputStream file = null;
         try {

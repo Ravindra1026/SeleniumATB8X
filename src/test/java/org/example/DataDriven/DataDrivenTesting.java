@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 public class DataDrivenTesting {
 @Test(dataProvider = "getData", dataProviderClass = UtilExcel.class)
     public void test_VWOLogin(String email, String password){
+    System.out.println(email + " " + password);
 
     }
 
